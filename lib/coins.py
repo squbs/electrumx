@@ -380,21 +380,6 @@ class BitcoinMixin(object):
                     '4ff763ae46a2a6c172b3f1b60a8ce26f')
     RPC_PORT = 8332
 
-class HOdlcoin(Coin):
-    NAME = "HOdlcoin"
-    SHORTNAME = "HODLC"
-    NET = "mainnet"
-    BASIC_HEADER_SIZE = 88
-    P2PKH_VERBYTE = bytes.fromhex("28")
-    P2SH_VERBYTES = [bytes.fromhex("05")]
-    WIF_BYTE = bytes.fromhex("a8")
-    GENESIS_HASH = ('008872e5582924544e5c707ee4b839bb'
-                    '82c28a9e94e917c94b40538d5658c04b')
-    DESERIALIZER = lib_tx.DeserializerSegWit
-    TX_COUNT = 258858
-    TX_COUNT_HEIGHT = 382138
-    TX_PER_BLOCK = 5
-
 
 class BitcoinCash(BitcoinMixin, Coin):
     NAME = "BitcoinCash"
@@ -935,6 +920,160 @@ class Monaize(KomodoMixin, EquihashMixin, Coin):
     REORG_LIMIT = 800
     PEERS = []
 
+class Revs(KomodoMixin, EquihashMixin, Coin):
+    NAME = "Revs"
+    SHORTNAME = "REVS"
+    NET = "mainnet"
+    TX_COUNT = 10000
+    TX_COUNT_HEIGHT = 4800
+    TX_PER_BLOCK = 2
+    RPC_PORT = 10196
+    REORG_LIMIT = 800
+    PEERS = []
+
+class Jumblr(KomodoMixin, EquihashMixin, Coin):
+    NAME = "Jumblr"
+    SHORTNAME = "JUMBLR"
+    NET = "mainnet"
+    TX_COUNT = 10000
+    TX_COUNT_HEIGHT = 5000
+    TX_PER_BLOCK = 2
+    RPC_PORT = 15106
+    REORG_LIMIT = 800
+    PEERS = []
+
+class WirelessCoin(KomodoMixin, EquihashMixin, Coin):
+    NAME = "WirelessCoin"
+    SHORTNAME = "WLC"
+    NET = "mainnet"
+    TX_COUNT = 52000
+    TX_COUNT_HEIGHT = 26000
+    TX_PER_BLOCK = 2
+    RPC_PORT = 12167
+    REORG_LIMIT = 800
+    PEERS = []
+
+class Coqui(KomodoMixin, EquihashMixin, Coin):
+    NAME = "Coqui"
+    SHORTNAME = "COQUI"
+    NET = "mainnet"
+    TX_COUNT = 2000
+    TX_COUNT_HEIGHT = 1000
+    TX_PER_BLOCK = 2
+    RPC_PORT = 14276
+    REORG_LIMIT = 800
+    PEERS = []
+
+class SuperNET(KomodoMixin, EquihashMixin, Coin):
+    NAME = "SuperNET"
+    SHORTNAME = "SUPERNET"
+    NET = "mainnet"
+    TX_COUNT = 10000
+    TX_COUNT_HEIGHT = 5000
+    TX_PER_BLOCK = 2
+    RPC_PORT = 11341
+    REORG_LIMIT = 800
+    PEERS = []
+
+class DEX(KomodoMixin, EquihashMixin, Coin):
+    NAME = "DEX"
+    SHORTNAME = "DEX"
+    NET = "mainnet"
+    TX_COUNT = 3000
+    TX_COUNT_HEIGHT = 1000
+    TX_PER_BLOCK = 3
+    RPC_PORT = 11890
+    REORG_LIMIT = 800
+    PEERS = []
+
+class Bots(KomodoMixin, EquihashMixin, Coin):
+    NAME = "Bots"
+    SHORTNAME = "BOTS"
+    NET = "mainnet"
+    TX_COUNT = 3000
+    TX_COUNT_HEIGHT = 1000
+    TX_PER_BLOCK = 3
+    RPC_PORT = 11964
+    REORG_LIMIT = 800
+    PEERS = []
+
+class Crypto(KomodoMixin, EquihashMixin, Coin):
+    NAME = "Crypto"
+    SHORTNAME = "CRYPTO"
+    NET = "mainnet"
+    TX_COUNT = 2000
+    TX_COUNT_HEIGHT = 1000
+    TX_PER_BLOCK = 2
+    RPC_PORT = 8516
+    REORG_LIMIT = 800
+    PEERS = []
+
+class Hodl(KomodoMixin, EquihashMixin, Coin):
+    NAME = "Hodl"
+    SHORTNAME = "HODL"
+    NET = "mainnet"
+    TX_COUNT = 2000
+    TX_COUNT_HEIGHT = 1000
+    TX_PER_BLOCK = 2
+    RPC_PORT = 14431
+    REORG_LIMIT = 800
+    PEERS = []
+
+class Pangea(KomodoMixin, EquihashMixin, Coin):
+    NAME = "Pangea"
+    SHORTNAME = "PANGEA"
+    NET = "mainnet"
+    TX_COUNT = 3000
+    TX_COUNT_HEIGHT = 1000
+    TX_PER_BLOCK = 3
+    RPC_PORT = 14068
+    REORG_LIMIT = 800
+    PEERS = []
+
+class Bet(KomodoMixin, EquihashMixin, Coin):
+    NAME = "Bet"
+    SHORTNAME = "BET"
+    NET = "mainnet"
+    TX_COUNT = 3000
+    TX_COUNT_HEIGHT = 1000
+    TX_PER_BLOCK = 3
+    RPC_PORT = 14250
+    REORG_LIMIT = 800
+    PEERS = []
+
+class mShark(KomodoMixin, EquihashMixin, Coin):
+    NAME = "mShark"
+    SHORTNAME = "MSHARK"
+    NET = "mainnet"
+    TX_COUNT = 200
+    TX_COUNT_HEIGHT = 100
+    TX_PER_BLOCK = 2
+    RPC_PORT = 8846
+    REORG_LIMIT = 800
+    PEERS = []
+
+class BitcoinHush(KomodoMixin, EquihashMixin, Coin):
+    NAME = "BitcoinHush"
+    SHORTNAME = "BTCH"
+    NET = "mainnet"
+    TX_COUNT = 400
+    TX_COUNT_HEIGHT = 200
+    TX_PER_BLOCK = 2
+    RPC_PORT = 8801
+    REORG_LIMIT = 800
+    PEERS = []
+
+class MultiGateway(KomodoMixin, EquihashMixin, Coin):
+    NAME = "MultiGateway"
+    SHORTNAME = "MGW"
+    NET = "mainnet"
+    TX_COUNT = 7500
+    TX_COUNT_HEIGHT = 5000
+    TX_PER_BLOCK = 2
+    RPC_PORT = 12386
+    REORG_LIMIT = 800
+    PEERS = []
+
 
 class Einsteinium(Coin):
     NAME = "Einsteinium"
@@ -1267,3 +1406,35 @@ class Feathercoin(Coin):
     PEERS = [
         'electrumx-ch-1.feathercoin.ch s t',
     ]
+
+class STRAKS(Coin):
+    NAME = "STRAKS"
+    SHORTNAME = "STAK"
+    NET = "mainnet"
+    XPUB_VERBYTES = bytes.fromhex("A2AEC9A6")
+    XPRV_VERBYTES = bytes.fromhex("46002A10")
+    GENESIS_HASH = ('00000df14d859c4b3219d93978bcf02a'
+                    'fc123d2344a2ed39033e1208948aa7c0')
+    P2PKH_VERBYTE = bytes.fromhex("3f")
+    P2SH_VERBYTES = [bytes.fromhex("05")]
+    WIF_BYTE = bytes.fromhex("cc")
+    DESERIALIZER = lib_tx.DeserializerSegWit
+    TX_COUNT_HEIGHT = 91134
+    TX_COUNT = 134988
+    TX_PER_BLOCK = 2
+    RPC_PORT = 7574 
+    REORG_LIMIT = 1000
+    PEERS = [
+        'sm001.alphaqub.com s t',
+        'sm002.alphaqub.com s t',
+        'sm003.alphaqub.com s t',
+        'sm004.alphaqub.com s t',
+        'sm005.alphaqub.com s t',
+    ]
+
+    @classmethod
+    def header_hash(cls, header):
+        '''Given a header return the hash.'''
+        import lyra2re2_hash
+        return lyra2re2_hash.getPoWHash(header)
+
