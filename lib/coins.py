@@ -1425,11 +1425,13 @@ class STRAKS(Coin):
     RPC_PORT = 7574 
     REORG_LIMIT = 1000
     PEERS = [
-        'sm001.alphaqub.com s t',
-        'sm002.alphaqub.com s t',
-        'sm003.alphaqub.com s t',
-        'sm004.alphaqub.com s t',
-        'sm005.alphaqub.com s t',
+        'sm001.alphaqub.com t',
+        'sm002.alphaqub.com t',
+        'sm003.alphaqub.com t',
+        'sm004.alphaqub.com t',
+        'sm005.alphaqub.com t',
+        'ex001-stak.qxu.io s t',
+        'ex002-stak.qxu.io s t'
     ]
 
     @classmethod
