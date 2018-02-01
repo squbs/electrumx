@@ -1411,8 +1411,8 @@ class STRAKS(Coin):
     NAME = "STRAKS"
     SHORTNAME = "STAK"
     NET = "mainnet"
-    XPUB_VERBYTES = bytes.fromhex("A2AEC9A6")
-    XPRV_VERBYTES = bytes.fromhex("46002A10")
+    XPUB_VERBYTES = bytes.fromhex("0488b21e")
+    XPRV_VERBYTES = bytes.fromhex("0488ade4")
     GENESIS_HASH = ('00000df14d859c4b3219d93978bcf02a'
                     'fc123d2344a2ed39033e1208948aa7c0')
     P2PKH_VERBYTE = bytes.fromhex("3f")
