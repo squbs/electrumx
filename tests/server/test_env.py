@@ -9,13 +9,14 @@ from server.env import Env, NetIdentity
 import lib.coins as lib_coins
 
 
-BASE_DAEMON_URL = 'http://username:password@hostname:321/'
+BASE_DAEMON_URL = 'http://username:password@hostname:7574/'
 BASE_DB_DIR = '/some/dir'
+
 
 base_environ = {
     'DB_DIRECTORY': BASE_DB_DIR,
     'DAEMON_URL': BASE_DAEMON_URL,
-    'COIN': 'BitcoinCash',
+    'COIN': 'STRAKS',
 }
 
 def setup_base_env():

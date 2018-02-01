@@ -78,7 +78,7 @@ def main():
 
     port = args.port
     if port is None:
-        port = int(environ.get('RPC_PORT', 8000))
+        port = int(environ.get('RPC_PORT', 8074))
 
     # Get the RPC request.
     method = args.command[0]
